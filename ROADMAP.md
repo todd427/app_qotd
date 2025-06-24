@@ -4,9 +4,9 @@
 
 ## v0.2 — Target Features
 
-✅ "author" filter on API  
-✅ API list endpoint  
-✅ random by tag endpoint  
+✅ Author filter on API  
+✅ List API endpoint  
+✅ Random quote by tag  
 ✅ Landing page `/qotd/`  
 ✅ Review UI polish
 
@@ -14,24 +14,26 @@
 
 ## v1.0 — Public Release
 
-✅ Admin bulk import (JSON/CSV)  
+✅ Admin bulk import (JSON / CSV)  
 ✅ Admin CSV export  
 ✅ Scheduled QOTD email  
-✅ Public API docs  
+✅ Public API docs (Swagger / Redoc)  
 ✅ Tagging system for quotes  
-✅ Full README / GitHub project page
+✅ React frontend (optional)  
+✅ PyPI package (optional — reusable Django app)  
+✅ Example public demo site (optional)
 
 ---
 
 ## Future Ideas
 
-✅ Frontend React version  
-✅ Public QOTD site (Foxxe Labs?)  
-✅ Integration with surveys  
-✅ Integration with ELLAY quotes  
-✅ Possible public API keys for authors / fans
+✅ RSS feed for QOTD  
+✅ Frontend widget (embed in any site)  
+✅ Author dashboard  
+✅ OAuth for managing personal quotes  
+✅ Integration with other creative apps (surveys, ELLAY)
 
 ---
 
 **Author:** Todd McCaffrey  
-**Project:** MSc Cyberpsychology — AI-human curation of QOTD systems  
+**Repo:** [https://github.com/todd427/app_qotd](https://github.com/todd427/app_qotd)
