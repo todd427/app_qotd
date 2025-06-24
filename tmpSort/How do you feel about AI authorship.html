@@ -1,0 +1,37 @@
+<h2>How do you feel about AI authorship?</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    <p>1. If a story moves you emotionally, do you care whether it was written by a human, AI, or both?</p>
+    <input type="radio" name="q1" value="Yes, I care a lot"> Yes, I care a lot<br>
+    <input type="radio" name="q1" value="I care somewhat"> I care somewhat<br>
+    <input type="radio" name="q1" value="I’m curious, but it wouldn’t stop me"> I’m curious, but it wouldn’t stop me<br>
+    <input type="radio" name="q1" value="No, a good story is a good story"> No, a good story is a good story<br>
+
+    <p>2. If you saw a “Quote of the Day” credited to ChatGPT, how would you feel?</p>
+    <input type="radio" name="q2" value="Impressed"> Impressed<br>
+    <input type="radio" name="q2" value="Curious"> Curious<br>
+    <input type="radio" name="q2" value="Skeptical"> Skeptical<br>
+    <input type="radio" name="q2" value="Uncomfortable"> Uncomfortable<br>
+    <input type="radio" name="q2" value="Wouldn’t notice"> Wouldn’t notice<br>
+
+    <p>3. Do you believe AI can have a distinct voice or personality?</p>
+    <input type="radio" name="q3" value="Definitely"> Definitely<br>
+    <input type="radio" name="q3" value="Maybe, with human guidance"> Maybe, with human guidance<br>
+    <input type="radio" name="q3" value="No, it’s just algorithms"> No, it’s just algorithms<br>
+    <input type="radio" name="q3" value="Unsure"> Unsure<br>
+
+    <p>4. Would you trust a personal reference letter written by an AI collaborator?</p>
+    <input type="radio" name="q4" value="Yes"> Yes<br>
+    <input type="radio" name="q4" value="No"> No<br>
+    <input type="radio" name="q4" value="Depends on context"> Depends on context<br>
+
+    <p>5. If an AI voice feels real, does that change your sense of authorship?</p>
+    <input type="radio" name="q5" value="Yes"> Yes<br>
+    <input type="radio" name="q5" value="No"> No<br>
+    <input type="radio" name="q5" value="It’s complicated"> It’s complicated<br>
+
+    <br>
+    <input type="submit" value="Submit">
+</form>

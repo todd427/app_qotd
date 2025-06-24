@@ -1,0 +1,42 @@
+<!-- qotd/templates/qotd/review_quotes.html -->
+{% extends "qotd/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h2>Review Quotes</h2>
+
+{% for quote in page_obj %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <p>{{ quote.text }}</p>
+        <p>— {{ quote.author }} | Source: {{ quote.source }} | URL: {{ quote.url }}</p>
+        <p>Approved: {{ quote.approved }}</p>
+        <p>
+            <a href="{% url 'edit_quote' quote.id %}">Edit</a>
+        </p>
+    </div>
+{% endfor %}
+
+<div>
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Next</a>
+    {% endif %}
+</div>
+<div style="margin-top: 20px;">
+<form method="post" action="{% url 'approve_all_quotes' %}" style="display: inline;">
+    {% csrf_token %}
+    <button type="submit">Approve All Quotes</button>
+</form>
+</div>
+
+<div style="margin-top: 20px;">
+<form method="post" action="{% url 'unapprove_all_quotes' %}" style="display: inline; margin-left: 10px;">
+    {% csrf_token %}
+    <button type="submit">Unapprove All Quotes</button>
+</form>
+</div>
+{% endblock %}

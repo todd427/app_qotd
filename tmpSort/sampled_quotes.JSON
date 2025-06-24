@@ -1,0 +1,290 @@
+[
+    {
+        "quote": "Do or do not. There is no try.",
+        "author": "Yoda",
+        "url": "https://starwars.com/yoda",
+        "source": "Star Wars"
+    },
+    {
+        "quote": "Not all those who wander are lost.",
+        "author": "J.R.R. Tolkien",
+        "url": "https://tolkienestate.com",
+        "source": "The Fellowship of the Ring"
+    },
+    {
+        "quote": "Any sufficiently advanced technology is indistinguishable from magic.",
+        "author": "Arthur C. Clarke",
+        "url": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+        "source": "Clarke's Third Law"
+    },
+    {
+        "quote": "The future belongs to those who believe in the beauty of their dreams.",
+        "author": "Eleanor Roosevelt",
+        "url": "",
+        "source": "Roosevelt Speeches"
+    },
+    {
+        "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+        "author": "Thomas Edison",
+        "url": "",
+        "source": "Edison Letters"
+    },
+    {
+        "quote": "Creativity is intelligence having fun.",
+        "author": "Albert Einstein",
+        "url": "https://einstein-archives.org",
+        "source": "Attributed"
+    },
+    {
+        "quote": "You can’t use up creativity. The more you use, the more you have.",
+        "author": "Maya Angelou",
+        "url": "https://mayaangelou.com",
+        "source": "Angelou Essays"
+    },
+    {
+        "quote": "It's kind of fun to do the impossible.",
+        "author": "Walt Disney",
+        "url": "https://disney.com",
+        "source": "Disney Archives"
+    },
+    {
+        "quote": "To boldly go where no one has gone before.",
+        "author": "Star Trek",
+        "url": "https://startrek.com",
+        "source": "Star Trek"
+    },
+    {
+        "quote": "Never let the fear of striking out keep you from playing the game.",
+        "author": "Babe Ruth",
+        "url": "",
+        "source": "Ruth Interviews"
+    },
+    {
+        "quote": "There is no greater agony than bearing an untold story inside you.",
+        "author": "Maya Angelou",
+        "url": "https://mayaangelou.com",
+        "source": "I Know Why the Caged Bird Sings"
+    },
+    {
+        "quote": "In the middle of every difficulty lies opportunity.",
+        "author": "Albert Einstein",
+        "url": "https://einstein-archives.org",
+        "source": "Attributed"
+    },
+    {
+        "quote": "We are all apprentices in a craft where no one ever becomes a master.",
+        "author": "Ernest Hemingway",
+        "url": "",
+        "source": "Hemingway Letters"
+    },
+    {
+        "quote": "Do one thing every day that scares you.",
+        "author": "Eleanor Roosevelt",
+        "url": "",
+        "source": "Roosevelt Speeches"
+    },
+    {
+        "quote": "Writing is thinking on paper.",
+        "author": "William Zinsser",
+        "url": "",
+        "source": "On Writing Well"
+    },
+    {
+        "quote": "The scariest moment is always just before you start.",
+        "author": "Stephen King",
+        "url": "https://stephenking.com",
+        "source": "On Writing"
+    },
+    {
+        "quote": "A writer is someone for whom writing is more difficult than it is for other people.",
+        "author": "Thomas Mann",
+        "url": "",
+        "source": "Essays of Three Decades"
+    },
+    {
+        "quote": "If you don't see the book you want on the shelf, write it.",
+        "author": "Beverly Cleary",
+        "url": "https://beverlycleary.com",
+        "source": "Cleary Interviews"
+    },
+    {
+        "quote": "Stories make us more alive, more human, more courageous, more loving.",
+        "author": "Madeleine L'Engle",
+        "url": "",
+        "source": "Walking on Water"
+    },
+    {
+        "quote": "The universe is made of stories, not atoms.",
+        "author": "Muriel Rukeyser",
+        "url": "",
+        "source": "The Speed of Darkness"
+    },
+    {
+        "quote": "You must stay drunk on writing so reality cannot destroy you.",
+        "author": "Ray Bradbury",
+        "url": "https://raybradbury.com",
+        "source": "Zen in the Art of Writing"
+    },
+    {
+        "quote": "Don't panic.",
+        "author": "Douglas Adams",
+        "url": "https://douglasadams.com",
+        "source": "The Hitchhiker's Guide to the Galaxy"
+    },
+    {
+        "quote": "Reality is frequently inaccurate.",
+        "author": "Douglas Adams",
+        "url": "https://douglasadams.com",
+        "source": "The Restaurant at the End of the Universe"
+    },
+    {
+        "quote": "There is no friend as loyal as a book.",
+        "author": "Ernest Hemingway",
+        "url": "",
+        "source": "Hemingway Letters"
+    },
+    {
+        "quote": "Fantasy is hardly an escape from reality. It's a way of understanding it.",
+        "author": "Lloyd Alexander",
+        "url": "",
+        "source": "The Horn Book"
+    },
+    {
+        "quote": "The best way to predict the future is to invent it.",
+        "author": "Alan Kay",
+        "url": "https://en.wikipedia.org/wiki/Alan_Kay",
+        "source": "Xerox PARC"
+    },
+    {
+        "quote": "Imagination will often carry us to worlds that never were. But without it we go nowhere.",
+        "author": "Carl Sagan",
+        "url": "https://carlsagan.com",
+        "source": "Cosmos"
+    },
+    {
+        "quote": "Somewhere, something incredible is waiting to be known.",
+        "author": "Carl Sagan",
+        "url": "https://carlsagan.com",
+        "source": "Cosmos"
+    },
+    {
+        "quote": "A book is a dream that you hold in your hand.",
+        "author": "Neil Gaiman",
+        "url": "https://neilgaiman.com",
+        "source": "Gaiman Talks"
+    },
+    {
+        "quote": "Fairy tales are more than true — not because they tell us dragons exist, but because they tell us dragons can be beaten.",
+        "author": "Neil Gaiman",
+        "url": "https://neilgaiman.com",
+        "source": "Coraline"
+    },
+    {
+        "quote": "You can make anything by writing.",
+        "author": "C.S. Lewis",
+        "url": "https://cslewis.com",
+        "source": "Lewis Letters"
+    },
+    {
+        "quote": "The secret of getting ahead is getting started.",
+        "author": "Mark Twain",
+        "url": "",
+        "source": "Twain Quotations"
+    },
+    {
+        "quote": "The difference between fiction and reality? Fiction has to make sense.",
+        "author": "Tom Clancy",
+        "url": "",
+        "source": "Clancy Interviews"
+    },
+    {
+        "quote": "Words are, in my not-so-humble opinion, our most inexhaustible source of magic.",
+        "author": "J.K. Rowling",
+        "url": "https://jkrowling.com",
+        "source": "Harry Potter and the Deathly Hallows"
+    },
+    {
+        "quote": "Reading is essential for those who seek to rise above the ordinary.",
+        "author": "Jim Rohn",
+        "url": "",
+        "source": "Rohn Talks"
+    },
+    {
+        "quote": "A room without books is like a body without a soul.",
+        "author": "Marcus Tullius Cicero",
+        "url": "",
+        "source": "Cicero Letters"
+    },
+    {
+        "quote": "It is never too late to be what you might have been.",
+        "author": "George Eliot",
+        "url": "",
+        "source": "Eliot Works"
+    },
+    {
+        "quote": "We are what we repeatedly do. Excellence, then, is not an act but a habit.",
+        "author": "Aristotle",
+        "url": "",
+        "source": "Aristotle Works"
+    },
+    {
+        "quote": "You miss 100% of the shots you don’t take.",
+        "author": "Wayne Gretzky",
+        "url": "",
+        "source": "Gretzky Talks"
+    },
+    {
+        "quote": "If you want to fly, you have to give up the things that weigh you down.",
+        "author": "Toni Morrison",
+        "url": "https://tonimorrison.com",
+        "source": "Morrison Works"
+    },
+    {
+        "quote": "We are all stories in the end. Just make it a good one.",
+        "author": "Doctor Who",
+        "url": "https://bbc.co.uk/doctorwho",
+        "source": "Doctor Who"
+    },
+    {
+        "quote": "Don't tell me the moon is shining; show me the glint of light on broken glass.",
+        "author": "Anton Chekhov",
+        "url": "",
+        "source": "Chekhov Letters"
+    },
+    {
+        "quote": "The only thing you absolutely have to know is the location of the library.",
+        "author": "Albert Einstein",
+        "url": "https://einstein-archives.org",
+        "source": "Attributed"
+    },
+    {
+        "quote": "Logic will get you from A to B. Imagination will take you everywhere.",
+        "author": "Albert Einstein",
+        "url": "https://einstein-archives.org",
+        "source": "Attributed"
+    },
+    {
+        "quote": "Fill your paper with the breathings of your heart.",
+        "author": "William Wordsworth",
+        "url": "",
+        "source": "Wordsworth Works"
+    },
+    {
+        "quote": "You don’t write because you want to say something, you write because you have something to say.",
+        "author": "F. Scott Fitzgerald",
+        "url": "",
+        "source": "Fitzgerald Letters"
+    },
+    {
+        "quote": "There is no greater agony than bearing an untold story inside you.",
+        "author": "Maya Angelou",
+        "url": "https://mayaangelou.com",
+        "source": "I Know Why the Caged Bird Sings"
+    },
+    {
+        "quote": "A goal without a plan is just a wish.",
+        "author": "Antoine de Saint-Exupéry",
+        "url": "",
+        "source": "Saint-Exupéry Works"
+    }
+]

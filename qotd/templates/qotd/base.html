@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Quote of the Day{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007acc;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .quote-card {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin-bottom: 1em;
+            background: #fff;
+            border-radius: 6px;
+        }
+        button {
+            padding: 6px 12px;
+            background: #007acc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Quote of the Day</h1>
+        <nav>
+            <a href="/qotd/review/">Review Quotes</a>
+            <a href="/admin/">Admin</a>
+            <a href="/qotd/api/random/">API</a>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>© 2025 Todd McCaffrey — QOTD App</p>
+    </footer>
+</body>
+</html>

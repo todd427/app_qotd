@@ -1,0 +1,16 @@
+<!-- qotd/templates/qotd/edit_quote.html -->
+{% extends "qotd/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h2>Edit Quote</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+<p><a href="{% url 'review_quotes' %}">Back to review list</a></p>
+{% endblock %}
