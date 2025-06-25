@@ -1,7 +1,11 @@
 <!-- qotd/templates/qotd/view_quotes.html -->
 {% extends "qotd/base.html" %}
 
-{% block title %}Approved Quotes{% endblock %}
+
+{% block nav %}{% endblock %}
+
+{% block header_title %}{% endblock %}
+
 
 {% block content %}
 
@@ -50,9 +54,8 @@
   }
 </style>
 
-<h2 class="w3-xxlarge w3-center w3-margin-bottom">Approved Quotes</h2>
-
 {% for quote in page_obj %}
+
     <div class="qotd-quote-card">
         <div class="qotd-quote-text">
             &#10077; {{ quote.text }} &#10078;
@@ -68,7 +71,7 @@
     
 </div>
 
-    </div>
+
 {% empty %}
     <p class="w3-center w3-text-grey">No approved quotes yet.</p>
 {% endfor %}

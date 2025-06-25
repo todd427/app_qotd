@@ -1,86 +1,98 @@
 <!-- qotd/templates/qotd/random_quote_page.html -->
 {% extends "qotd/base.html" %}
 
-{% block title %}Quote of the Day{% endblock %}
-{% block nav %}{% endblock %}  
+{% block title %}{% endblock %}
+
+{% block header_title %}{% endblock %}   <!-- suppress header in base -->
+
+{% block nav %}{% endblock %}            <!-- suppress nav -->
+
 {% block content %}
 
 <style>
+  .qotd-header-title {
+      font-size: 3.2em;
+      font-weight: 700;
+      color: #2a6bc6;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      letter-spacing: 1.2px;
+      margin-bottom: 0.2em;
+      animation: fadeIn 1.5s ease forwards;
+  }
+
   .qotd-big-quote-card {
-    background: #fefefe;
-    border-radius: 1.5em;
-    padding: 3em 3.5em;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    margin: 4em auto;
-    max-width: 900px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #fefefe;
+      border-radius: 1.5em;
+      padding: 3em 3.5em;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      margin: 4em auto;
+      max-width: 900px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
   }
   .qotd-big-quote-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
   }
   .qotd-big-quote-text {
-    font-size: 2.2em;
-    line-height: 1.6;
-    font-style: italic;
-    color: #042548;
-    text-shadow: 0 2px 8px #7edbef80;
-    margin-bottom: 1em;
-    text-align: center;
+      font-size: 2.2em;
+      line-height: 1.6;
+      font-style: italic;
+      color: #042548;
+      text-shadow: 0 2px 8px #7edbef80;
+      margin-bottom: 1em;
+      text-align: center;
+  }
+  .qotd-big-quote-author {
+      font-size: 1.6em;
+      font-weight: 600;
+      color: #2a6bc6;
+      text-align: center;
+      margin-top: 1em;
   }
   .qotd-author-label {
-    display: inline-block;
-    padding: 0.3em 0.7em;
-    border-radius: 999px;
-    background: #e3ecfa;
-    color: #2a6bc6;
-    font-size: 1em;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s;
-    }
-    .qotd-author-label:hover {
-        background: #c7d9f5;
-        color: #042548;
-    }
-    .qotd-fade-in {
-        opacity: 0;
-        animation: fadeIn 2.0s ease forwards;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-  .qotd-big-quote-author {
-    font-size: 1.6em;
-    font-weight: 600;
-    color: #2a6bc6;
-    text-align: center;
-    margin-top: 1em;
+      display: inline-block;
+      padding: 0.3em 0.7em;
+      border-radius: 999px;
+      background: #e3ecfa;
+      color: #2a6bc6;
+      font-size: 1em;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+  }
+  .qotd-author-label:hover {
+      background: #c7d9f5;
+      color: #042548;
   }
   .qotd-refresh {
-    margin-top: 2em;
-    text-align: center;
+      margin-top: 2em;
+      text-align: center;
   }
 </style>
 
-{% if quote %}
-<div class="qotd-big-quote-card qotd-fade-in">
-    <div class="qotd-big-quote-text">
-        &#10077; {{ quote.text }} &#10078;
-    </div>
-    <div class="qotd-big-quote-author">
-        {% if quote.url %}
-            <a href="{{ quote.url }}" target="_blank" class="qotd-author-label">{{ quote.author }}</a>
-        {% else %}
-            {{ quote.author }}
-        {% endif %}
-        {% if quote.source %} <span class="w3-small">({{ quote.source }})</span>{% endif %}
-    </div>
-</div>
+<h1 class="qotd-header-title">Quote of the Day</h1>
 
+{% if quote %}
+    <div class="qotd-big-quote-card">
+        <div class="qotd-big-quote-text">
+            &#10077; {{ quote.text }} &#10078;
+        </div>
+        <div class="qotd-big-quote-author">
+            —
+            {% if quote.url %}
+                <a href="{{ quote.url }}" target="_blank" class="qotd-author-label">{{ quote.author }}</a>
+            {% else %}
+                {{ quote.author }}
+            {% endif %}
+            {% if quote.source %} <span class="w3-small">({{ quote.source }})</span>{% endif %}
+        </div>
+    </div>
     <div class="qotd-refresh">
         <a href="{% url 'random_quote_page' %}" class="w3-button w3-blue w3-large w3-round-large">Show Another Quote</a>
     </div>
