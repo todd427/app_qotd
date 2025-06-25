@@ -9,4 +9,5 @@ urlpatterns = [
     path('approve-all/', views.approve_all_quotes, name='approve_all_quotes'),
     path('unapprove-all/', views.unapprove_all_quotes, name='unapprove_all_quotes'),
     path('view/', views.view_approved_quotes, name='view_approved_quotes'),
+    path('', views.random_quote_page, name='random_quote_page'),
 ]

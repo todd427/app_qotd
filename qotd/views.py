@@ -6,6 +6,7 @@ from django.core.paginator import Paginator
 from django import forms
 from django.views.decorators.http import require_POST
 
+import random
 
 class QuoteForm(forms.ModelForm):
     class Meta:
@@ -55,3 +56,10 @@ def view_approved_quotes(request):
     page_obj = paginator.get_page(page_number)
 
     return render(request, 'qotd/view_quotes.html', {'page_obj': page_obj})
+# qotd/views.py
+
+
+def random_quote_page(request):
+    quotes = Quote.objects.filter(approved=True)
+    quote = random.choice(quotes) if quotes.exists() else None
+    return render(request, 'qotd/random_quote.html', {'quote': quote})

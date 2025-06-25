@@ -27,13 +27,16 @@
 
     <header class="w3-center w3-padding-16">
         <h1 class="w3-xxlarge">Quote of the Day</h1>
+        {% block nav %}
         <nav class="w3-bar w3-light-grey w3-padding">
             <a href="/qotd/view/" class="w3-bar-item w3-button">View Quotes</a>
             <a href="/qotd/review/" class="w3-bar-item w3-button">Review Quotes</a>
             <a href="/admin/" class="w3-bar-item w3-button">Admin</a>
             <a href="/qotd/api/random/" class="w3-bar-item w3-button">API</a>
         </nav>
+        {% endblock %}
     </header>
+    
 
     {% block content %}{% endblock %}
 
