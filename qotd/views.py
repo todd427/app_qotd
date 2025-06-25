@@ -6,6 +6,7 @@ from django.core.paginator import Paginator
 from django import forms
 from django.views.decorators.http import require_POST
 
+
 class QuoteForm(forms.ModelForm):
     class Meta:
         model = Quote
@@ -44,3 +45,13 @@ def approve_all_quotes(request):
 def unapprove_all_quotes(request):
     Quote.objects.filter(approved=True).update(approved=False)
     return redirect('review_quotes')
+
+
+def view_approved_quotes(request):
+    quotes = Quote.objects.filter(approved=True).order_by('-created_at')
+    paginator = Paginator(quotes, 10)  # 10 per page
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'qotd/view_quotes.html', {'page_obj': page_obj})

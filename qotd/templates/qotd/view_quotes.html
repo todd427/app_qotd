@@ -1,0 +1,94 @@
+<!-- qotd/templates/qotd/view_quotes.html -->
+{% extends "qotd/base.html" %}
+
+{% block title %}Approved Quotes{% endblock %}
+
+{% block content %}
+
+<style>
+  .qotd-quote-card {
+    background: #fefefe;
+    border-radius: 1.5em;
+    padding: 2em 2.5em;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .qotd-quote-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  .qotd-quote-text {
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-style: italic;
+    color: #042548;
+    text-shadow: 0 2px 8px #7edbef80;
+    margin-bottom: 1em;
+  }
+  .qotd-quote-author {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #2a6bc6;
+    text-align: right;
+    .qotd-author-label {
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    border-radius: 999px;
+    background: #e3ecfa;
+    color: #2a6bc6;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    }
+    .qotd-author-label:hover {
+        background: #c7d9f5;
+        color: #042548;
+    }
+
+  }
+</style>
+
+<h2 class="w3-xxlarge w3-center w3-margin-bottom">Approved Quotes</h2>
+
+{% for quote in page_obj %}
+    <div class="qotd-quote-card">
+        <div class="qotd-quote-text">
+            &#10077; {{ quote.text }} &#10078;
+        </div>
+    <div class="qotd-quote-author">
+        {% if quote.url %}
+            <a href="{{ quote.url }}" target="_blank" class="qotd-author-label">{{ quote.author }}</a>
+        {% else %}
+            {{ quote.author }}
+        {% endif %}
+        {% if quote.source %} <span class="w3-small">({{ quote.source }})</span>{% endif %}
+    </div>
+    
+</div>
+
+    </div>
+{% empty %}
+    <p class="w3-center w3-text-grey">No approved quotes yet.</p>
+{% endfor %}
+
+<!-- Pagination Controls -->
+<div class="w3-center w3-margin-top">
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}" class="w3-button w3-light-grey w3-large">Previous</a>
+    {% endif %}
+
+    <span class="w3-large">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}" class="w3-button w3-light-grey w3-large">Next</a>
+    {% endif %}
+</div>
+
+<!-- Back to Top -->
+<div class="w3-center w3-margin-top">
+    <a href="#top" class="w3-button w3-blue w3-round-large w3-large w3-margin-top">Back to Top</a>
+</div>
+
+{% endblock %}
